@@ -2,7 +2,9 @@
 
 Welcome to the official website for *"The Rain I Love"*, a romantic fiction novel by **Sahil Jeet Singh**. This site allows readers to learn more about the author, explore the story, order the book from trusted platforms, and connect directly through a contact form.
 
-![Website Preview](./Previews/Screenshot%202025-06-24%20224545.png)
+![Website Preview](./Previews/Screenshot%202025-06-24%20224233.png)
+![Website Preview2](./Previews/Screenshot%202025-06-24%20224252.png)
+![Website Preview3](./Previews/Screenshot%202025-06-24%20224333.png)
 
 
 
@@ -28,48 +30,7 @@ Welcome to the official website for *"The Rain I Love"*, a romantic fiction nove
 - **Styling**: Custom CSS, Google Fonts
 - **Version Control**: Git & GitHub
 
----
 
-## 📂 Project Structure
-
-sahilwrites-book-site/
-├── public/
-│ ├── book-cover.jpg
-│ ├── flipkart-logo.svg
-│ ├── amazon-logo.svg
-│ └── web logo.jpg (favicon)
-├── src/
-│ ├── components/
-│ │ ├── Navbar.jsx
-│ │ └── Footer.jsx
-│ ├── pages/
-│ │ ├── Home.jsx + Home.css
-│ │ ├── AboutAuthor.jsx + AboutAuthor.css
-│ │ ├── BuyLinks.jsx + BuyLinks.css
-│ │ └── Contact.jsx + Contact.css
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-├── index.html
-└── README.md
-
----
-
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home](./screenshots/home.png)
-
-### 👤 About Author
-![About](./screenshots/about.png)
-
-### 🛒 Buy Links
-![Buy](./screenshots/buy.png)
-
-### ✉️ Contact Form
-![Contact](./screenshots/contact.png)
-
----
 
 ## 📧 Contact the Developer
 
@@ -85,9 +46,7 @@ Built with ❤️ by **Ajit Kumar Jha**
 
 This project is licensed under the MIT License — feel free to use and customize it with credit.
 
----
 
-## 🌍 Live Demo (Optional)
 
-> Link here once deployed — want help with GitHub Pages or Vercel deployment?
+
 
