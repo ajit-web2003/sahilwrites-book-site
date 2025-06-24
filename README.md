@@ -2,7 +2,7 @@
 
 Welcome to the official website for *"The Rain I Love"*, a romantic fiction novel by **Sahil Jeet Singh**. This site allows readers to learn more about the author, explore the story, order the book from trusted platforms, and connect directly through a contact form.
 
-![Website Preview](./public/book-cover.jpg)
+![Website Preview](./Previews/Screenshot 2025-06-24 224545.png)
 
 ---
 
