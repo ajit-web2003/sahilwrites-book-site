@@ -1,0 +1,99 @@
+/* --------------------------------------------
+   OUTER CONTAINER: Full screen layout setup
+-------------------------------------------- */
+.full-page-wrapper {
+  width: 100%;
+  min-height: 100vh; /* Ensure full screen height */
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------
+   BACKGROUND SECTION: Book background image
+-------------------------------------------- */
+.buy-bg {
+  background-image: url('/book-bg.jpg'); /* Background image (book-related) */
+  background-size: cover;                /* Cover the full section */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+
+  /* Center the buy section inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------
+   BUY CARD CONTAINER (Glass-like box)
+-------------------------------------------- */
+.buy-section {
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white glass look */
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Section title */
+.buy-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111827; /* Dark blue-gray */
+}
+
+/* Supporting paragraph */
+.buy-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+/* --------------------------------------------
+   BUY NOW BUTTONS (for Amazon, Flipkart)
+-------------------------------------------- */
+.buy-buttons {
+  display: inline-flex; /* Icon and text in one row */
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;            /* Space between text and logo */
+  padding: 1rem 1.8rem;
+  margin-bottom: 1rem;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+
+  /* Smooth interaction */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo inside buttons */
+.buy-buttons img {
+  width: 80px;
+  height: auto;
+}
+
+/* Amazon-specific color styling */
+.buy-buttons.amazon {
+  background-color: #ddd5c9; /* Beige-tan */
+}
+
+/* Flipkart-specific color styling */
+.buy-buttons.flipkart {
+  background-color: #facc15; /* Golden-yellow */
+}
+
+/* Hover effects */
+.buy-buttons:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,136 @@
+/* ----------------------------------------
+   HOME PAGE LAYOUT WRAPPER
+---------------------------------------- */
+.home-page {
+  padding: 2rem 0; /* Top and bottom spacing for the whole page */
+}
+
+/* ----------------------------------------
+   HERO SECTION (Top content with text + image)
+---------------------------------------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+
+  /* Gradient background: soft romantic pastel */
+  background: linear-gradient(to right, #f8fafc, #fefce8);
+  
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); /* Soft outer shadow */
+  
+  flex-wrap: wrap; /* Stack vertically on smaller screens */
+}
+
+/* Left-side text content */
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Right-side image wrapper */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for book image */
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+}
+
+/* ----------------------------------------
+   HERO TEXT STYLING
+---------------------------------------- */
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937; /* Deep blue-gray */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #374151; /* Muted gray tone */
+}
+
+/* Custom font and style for book title */
+.book-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* ----------------------------------------
+   BUY BUTTON
+---------------------------------------- */
+.buy-button {
+  display: inline-block;
+  background-color: #facc15;       /* Yellow/golden tone */
+  color: #1f2937;                  /* Dark text for contrast */
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for lift */
+}
+
+.buy-button:hover {
+  background-color: #eab308;       /* Slightly darker on hover */
+  transform: translateY(-2px);     /* Lift effect on hover */
+}
+
+/* ----------------------------------------
+   QUOTE / TESTIMONIAL SECTION
+---------------------------------------- */
+.quote {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ----------------------------------------
+   RESPONSIVE DESIGN
+---------------------------------------- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;     /* Stack content vertically */
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buy-button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Center on small screens */
+  }
+}

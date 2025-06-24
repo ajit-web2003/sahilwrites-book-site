@@ -1,0 +1,99 @@
+/* --------------------------------------------
+   MAIN NAVBAR STYLING
+-------------------------------------------- */
+.navbar {
+  background-color: #1f2937; /* Dark background */
+  color: white;
+  padding: 0.6rem 0;
+  position: sticky; /* Keeps navbar visible on scroll */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Flex container for logo and menu */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------
+   BRAND / LOGO STYLE
+-------------------------------------------- */
+.logo {
+  font-family: 'Pacifico', cursive; /* Stylish script font */
+  font-size: 1.8rem;
+  color: #facc15; /* Golden yellow */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* --------------------------------------------
+   NAVIGATION LINKS
+-------------------------------------------- */
+.nav-links {
+  display: flex;
+  gap: 1.5rem; /* Space between nav items */
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #facc15; /* Highlight link on hover */
+}
+
+/* --------------------------------------------
+   HAMBURGER MENU ICON (HIDDEN BY DEFAULT)
+-------------------------------------------- */
+.menu-toggle {
+  display: none; /* Shown only on mobile */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* --------------------------------------------
+   MOBILE RESPONSIVE MENU
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;           /* Just below the navbar */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #1f2937;
+    display: none;       /* Hidden by default */
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;       /* Show menu when active */
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;   /* Spacing between links */
+  }
+}

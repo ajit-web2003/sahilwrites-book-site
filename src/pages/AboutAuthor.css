@@ -1,0 +1,69 @@
+/* --------------------------------------------
+   PAGE WRAPPER
+-------------------------------------------- */
+.about-author-page {
+  padding: 2rem 0; /* Adds vertical space around the content */
+}
+
+/* --------------------------------------------
+   FLEX CONTAINER for image + bio side by side
+-------------------------------------------- */
+.author-section {
+  display: flex;           /* Horizontal layout */
+  align-items: center;     /* Vertically align image & text */
+  gap: 2rem;               /* Space between image and text */
+  flex-wrap: wrap;         /* Stack content on smaller screens */
+}
+
+/* --------------------------------------------
+   AUTHOR IMAGE STYLING
+-------------------------------------------- */
+.author-image {
+  flex: 1;                 /* Take 1 portion of horizontal space */
+  min-width: 260px;        /* Prevents image from getting too small */
+  text-align: center;      /* Centers image on smaller screens */
+}
+
+.author-image img {
+  width: 100%;             /* Responsive inside container */
+  max-width: 300px;
+  border-radius: 12px;     /* Smooth corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* --------------------------------------------
+   AUTHOR BIO STYLING
+-------------------------------------------- */
+.author-bio {
+  flex: 2;                 /* Takes 2x the space compared to image */
+  min-width: 280px;
+}
+
+.author-bio h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.author-bio p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;        /* Improves readability */
+}
+
+/* --------------------------------------------
+   RESPONSIVE STYLES (MOBILE)
+-------------------------------------------- */
+@media (max-width: 768px) {
+  .author-section {
+    flex-direction: column;  /* Stack image & text vertically */
+    text-align: center;      /* Center text on mobile */
+  }
+
+  .author-bio h1 {
+    font-size: 1.5rem;
+  }
+
+  .author-bio p {
+    font-size: 1rem;
+  }
+}

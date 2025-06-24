@@ -1,0 +1,69 @@
+/* --------------------------------------------
+   MAIN FOOTER STYLING
+-------------------------------------------- */
+.footer {
+  background-color: #1f2937; /* Dark theme background */
+  color: white;
+  padding: 0.2rem 0; /* Compact top & bottom padding */
+  text-align: center;
+}
+
+/* --------------------------------------------
+   AUTHOR COPYRIGHT TEXT
+-------------------------------------------- */
+.footer-author {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  color: #d1d5db; /* Muted light gray text */
+}
+
+/* --------------------------------------------
+   DEVELOPER CREDIT SECTION
+-------------------------------------------- */
+.footer-dev {
+  margin-top: 0.2rem;
+}
+
+/* Developer name text */
+.footer-name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+/* --------------------------------------------
+   SOCIAL ICONS
+-------------------------------------------- */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;               /* Space between icons */
+  margin-bottom: 0.2rem;
+}
+
+/* Styling each icon link */
+.footer-icons a {
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect: gold color & slight zoom */
+.footer-icons a:hover {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+/* --------------------------------------------
+   MOBILE RESPONSIVENESS
+-------------------------------------------- */
+@media (max-width: 480px) {
+  .footer-author,
+  .footer-name {
+    font-size: 0.9rem;
+  }
+
+  .footer-icons a {
+    font-size: 1.1rem;
+  }
+}

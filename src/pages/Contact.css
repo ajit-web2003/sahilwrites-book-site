@@ -1,0 +1,170 @@
+/* ----------------------------------------
+   CONTACT PAGE LAYOUT
+---------------------------------------- */
+.contact-page {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #f8fafc, #fefce8); /* Soft romantic background */
+  text-align: center;
+  min-height: 80vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading at the top */
+.contact-page h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Introductory paragraph below heading */
+.intro-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+/* ----------------------------------------
+   CONTACT FORM STYLES
+---------------------------------------- */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between inputs */
+}
+
+/* Text input & textarea styles */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+/* Prevent users from resizing the message box (for cleaner design) */
+.contact-form textarea {
+  resize: none;
+}
+
+/* Submit button styling */
+.contact-form button {
+  background-color: #1f2937; /* Dark blue-gray */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect on button */
+.contact-form button:hover {
+  background-color: #1f2937; /* Could change if needed */
+}
+
+/* Form success/error message */
+.form-status {
+  margin-top: 1rem;
+  color: green;
+  font-weight: 500;
+}
+
+/* ----------------------------------------
+   AUTHOR CONTACT INFO
+---------------------------------------- */
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Email link */
+.contact-info a {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------
+   SOCIAL MEDIA ICON LINKS
+---------------------------------------- */
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: #1f2937;
+  transition: transform 0.2s;
+}
+
+/* Hover effect on social icons */
+.social-links a:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------------------------------
+   RESPONSIVE DESIGN
+---------------------------------------- */
+@media (max-width: 600px) {
+  .contact-page h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 0 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ----------------------------------------
+   SUCCESS MESSAGE ANIMATION
+---------------------------------------- */
+.success-message {
+  display: inline-block;
+  background-color: #d1fae5; /* Light green background */
+  color: #065f46;             /* Dark green text */
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  animation: fadeIn 0.6s ease-in-out;
+  margin-top: 1rem;
+  border: 1px solid #10b981;  /* Green border */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
