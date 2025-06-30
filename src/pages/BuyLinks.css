@@ -86,6 +86,11 @@
   background-color: #ddd5c9; /* Beige-tan */
 }
 
+.buy-buttons.bluerose {
+  
+  background-color: #374151;
+
+}
 /* Flipkart-specific color styling */
 .buy-buttons.flipkart {
   background-color: #facc15; /* Golden-yellow */

@@ -10,6 +10,18 @@ const BuyLinks = () => {
           {/* Page heading */}
           <h2>Order Your Copy</h2>
           <p>Available from these platforms:</p>
+          <a
+            href="https://blueroseone.com/store/product/the-rain-i-love"
+            className="buy-buttons bluerose"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BUY-ON
+            <img src="/blueroseone.webp" alt="blueroseone" />
+          </a>
+
+
+
 
           {/* Amazon buy link with branding */}
           <a
@@ -18,7 +30,7 @@ const BuyLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Buy on
+            Coming-Soon
             <img src="/amazon-logo.svg" alt="Amazon" />
           </a>
 
@@ -29,7 +41,7 @@ const BuyLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Buy on
+            Coming-Soon
             <img src="/flipkart-logo.svg" alt="Flipkart" />
           </a>
         </div>
