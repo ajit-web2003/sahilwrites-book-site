@@ -16,7 +16,7 @@ const BuyLinks = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            BUY-ON
+            BUY NOW
             <img src="/blueroseone.webp" alt="blueroseone" />
           </a>
 
@@ -25,25 +25,36 @@ const BuyLinks = () => {
 
           {/* Amazon buy link with branding */}
           <a
-            href="https://www.amazon.in/"
+            href="https://www.amazon.in/dp/9371392983"
             className="buy-buttons amazon"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Coming-Soon
+            BUY NOW
             <img src="/amazon-logo.svg" alt="Amazon" />
           </a>
 
           {/* Flipkart buy link with branding */}
           <a
-            href="https://www.flipkart.com/"
+            href="https://www.flipkart.com/product/p/itme?pid=9789371392983"
             className="buy-buttons flipkart"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Coming-Soon
+            BUY NOW
             <img src="/flipkart-logo.svg" alt="Flipkart" />
           </a>
+
+             <a
+            href="https://play.google.com/store/books/details?id=yA5pEQAAQBAJ"
+            className="buy-buttons googleplay"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EBOOK
+            <img src="/Google Play Books.svg" alt="google play" />
+          </a>
+
         </div>
       </div>
     </div>

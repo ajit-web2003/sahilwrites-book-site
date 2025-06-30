@@ -56,12 +56,14 @@
    BUY NOW BUTTONS (for Amazon, Flipkart)
 -------------------------------------------- */
 .buy-buttons {
-  display: inline-flex; /* Icon and text in one row */
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;            /* Space between text and logo */
-  padding: 1rem 1.8rem;
-  margin-bottom: 1rem;
+  gap: 0.6rem;
+  width: 80%;               /* Full width inside container */
+  max-width: 320px;          /* Lock max width */
+  height: 60px;              /* Fixed height for all buttons */
+  margin: 0 auto 1rem auto;  /* Center align + spacing */
 
   font-size: 1.1rem;
   font-weight: 600;
@@ -70,14 +72,14 @@
   border-radius: 8px;
   text-decoration: none;
 
-  /* Smooth interaction */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Logo inside buttons */
 .buy-buttons img {
-  width: 80px;
+  width: 60px;
   height: auto;
 }
 
@@ -95,6 +97,13 @@
 .buy-buttons.flipkart {
   background-color: #facc15; /* Golden-yellow */
 }
+
+.buy-buttons.googleplay {
+    
+  background-color:rgb(12, 70, 70);
+
+}
+
 
 /* Hover effects */
 .buy-buttons:hover {
