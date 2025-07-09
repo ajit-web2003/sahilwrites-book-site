@@ -55,6 +55,18 @@ const BuyLinks = () => {
             <img src="/Google Play Books.svg" alt="google play" />
           </a>
 
+            <a
+            href="https://blueroseone.com/store/product/the-rain-i-love-gBMSc"
+            className="buy-buttons googleplay"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EBOOK
+            <img src="/blueroseone.webp" alt="google play" />
+          </a>  
+
+
+
         </div>
       </div>
     </div>
